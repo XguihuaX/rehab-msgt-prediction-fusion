@@ -1,0 +1,25 @@
+\begin{table}[!htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{1.28}
+\caption{Participant-disjoint correctness classification on IRDS and REHAB24-6.}
+\label{tab:external-classification}
+\resizebox{0.94\textwidth}{!}{%
+\begin{tabular}{llrrrr}
+\toprule
+\rowcolor{headergray}
+Dataset & Architecture & Balanced accuracy & AUROC & AUPRC & MCC \\
+\midrule
+\rowcolor{msgthair}
+IRDS & MSGT & \textbf{0.734 $\pm$ 0.045} & \textbf{0.827 $\pm$ 0.028} & \textbf{0.621 $\pm$ 0.090} & \textbf{0.460 $\pm$ 0.102} \\
+IRDS & STGCN-Rehab & 0.631 $\pm$ 0.041 & 0.681 $\pm$ 0.061 & 0.438 $\pm$ 0.043 & 0.240 $\pm$ 0.074 \\
+IRDS & CTR-GCN & 0.604 $\pm$ 0.038 & 0.696 $\pm$ 0.072 & 0.410 $\pm$ 0.068 & 0.198 $\pm$ 0.077 \\
+\addlinespace[2pt]
+REHAB24-6 & MSGT & 0.655 $\pm$ 0.001 & 0.709 $\pm$ 0.009 & 0.702 $\pm$ 0.003 & 0.310 $\pm$ 0.003 \\
+REHAB24-6 & STGCN-Rehab & 0.525 $\pm$ 0.024 & 0.543 $\pm$ 0.028 & 0.521 $\pm$ 0.022 & 0.052 $\pm$ 0.048 \\
+\rowcolor{msgthair}
+REHAB24-6 & CTR-GCN & \textbf{0.687 $\pm$ 0.011} & \textbf{0.737 $\pm$ 0.016} & \textbf{0.713 $\pm$ 0.005} & \textbf{0.377 $\pm$ 0.025} \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

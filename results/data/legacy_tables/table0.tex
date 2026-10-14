@@ -1,0 +1,22 @@
+\begin{table*}[tb]
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.22}
+\caption{Dataset and task-contract overview after frozen eligibility and deduplication.}
+\label{tab:datasets}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrlll}
+\toprule
+\rowcolor{headergray}
+Repository & Eligible participants & Eligible records & Actions & Quality target & Evaluation role \\
+\midrule
+\rowcolor{msgthair}
+KIMORE & 71 & 355 & 5 & Repository clinician score divided by 100 & K$\rightarrow$U source; U$\rightarrow$K clinical target \\
+UI-PRMD & 10 & 1,326 & 10 & Fold-contained action-quality proxy when used as target & U$\rightarrow$K frozen proxy-supervised source; K$\rightarrow$U proxy target \\
+IRDS & 29 & 2,516 & 9 & Repetition correctness; incorrect is positive & Five-fold participant-disjoint classification \\
+\rowcolor{msgthair}
+REHAB24-6 & 10 & 1,056 & 6 & Repetition correctness; incorrect is positive & Leave-one-participant-out classification \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}

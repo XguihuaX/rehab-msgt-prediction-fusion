@@ -1,0 +1,108 @@
+{
+  "count_type": "descriptive_correlated_setting_counts_not_independent_participants",
+  "fair_u2k_irds_dynamic_vs_same_model_direct": {
+    "by_model_wins": {
+      "msgt": 12,
+      "ri_gcn": 12
+    },
+    "total": 24
+  },
+  "five_settings_dynamic_vs_same_model_direct": {
+    "by_dataset": {
+      "K2U_proxy": {
+        "losses": 2,
+        "ties": 0,
+        "wins": 0
+      },
+      "KERAAL": {
+        "losses": 0,
+        "ties": 0,
+        "wins": 8
+      },
+      "U2K": {
+        "losses": 0,
+        "ties": 0,
+        "wins": 6
+      },
+      "irds": {
+        "losses": 0,
+        "ties": 0,
+        "wins": 6
+      },
+      "rehab24_6": {
+        "losses": 1,
+        "ties": 0,
+        "wins": 5
+      }
+    },
+    "losses": 3,
+    "ties": 0,
+    "total": 28,
+    "wins": 25
+  },
+  "five_settings_other_models_dynamic_vs_direct": {
+    "by_dataset": {
+      "KERAAL": {
+        "losses": 0,
+        "ties": 0,
+        "wins": 6
+      },
+      "U2K": {
+        "losses": 0,
+        "ties": 0,
+        "wins": 4
+      },
+      "irds": {
+        "losses": 0,
+        "ties": 0,
+        "wins": 4
+      },
+      "rehab24_6": {
+        "losses": 1,
+        "ties": 0,
+        "wins": 3
+      }
+    },
+    "losses": 1,
+    "ties": 0,
+    "total": 18,
+    "wins": 17
+  },
+  "new_weight_exploratory": {
+    "source_result_path": "research_reframe_20260918/strengthening_20260920/new_weight/exploratory_evaluation/RESULT.json",
+    "source_result_sha256": "29a700b589ff6fd51b4967224cb006356a922e0a72669388e1878ea61e87cb14",
+    "status": "exploratory_reanalysis_not_independent_validation",
+    "wins_by_reference": {
+      "development_alpha": {
+        "losses": 1,
+        "ties": 0,
+        "total": 16,
+        "wins": 15
+      },
+      "direct": {
+        "losses": 2,
+        "ties": 0,
+        "total": 24,
+        "wins": 22
+      },
+      "dynamic": {
+        "losses": 3,
+        "ties": 0,
+        "total": 24,
+        "wins": 21
+      },
+      "fixed_half": {
+        "losses": 8,
+        "ties": 8,
+        "total": 24,
+        "wins": 8
+      },
+      "source": {
+        "losses": 8,
+        "ties": 0,
+        "total": 24,
+        "wins": 16
+      }
+    }
+  }
+}

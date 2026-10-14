@@ -1,0 +1,42 @@
+\begin{table}[!t]
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.18}
+\setlength{\tabcolsep}{3.5pt}
+\caption{Endpoint-aligned paired Full-MSGT contrasts with D-STGCNT and EGCN.}
+\label{tab:recent-endpoints}
+\textbf{(a) Error metrics}\par\vspace{2pt}
+\begin{tabularx}{\textwidth}{@{}ll>{\centering\arraybackslash}X>{\centering\arraybackslash}X@{}}
+\toprule
+\rowcolor{headergray}
+Direction & Comparator & $\Delta$RMSE & $\Delta$MAE \\
+\midrule
+\rowcolor{msgthair}
+K$\rightarrow$U ($b=5$) & D-STGCNT & \textbf{0.00813 [0.00457, 0.01201]} & \textbf{0.01463 [0.01091, 0.01868]} \\
+K$\rightarrow$U ($b=5$) & EGCN & 0.00274 [$-0.00050$, 0.00570] & \textbf{0.00390 [0.00207, 0.00564]} \\
+\addlinespace[2pt]
+\rowcolor{msgthair}
+U$\rightarrow$K ($b=35$) & D-STGCNT & \textbf{0.05704 [0.04993, 0.06515]} & \textbf{0.05264 [0.04610, 0.06020]} \\
+U$\rightarrow$K ($b=35$) & EGCN & \textbf{0.01937 [0.01457, 0.02414]} & \textbf{0.01144 [0.00744, 0.01543]} \\
+\bottomrule
+\end{tabularx}
+
+\vspace{5pt}
+\textbf{(b) Correlation and concordance metrics}\par\vspace{2pt}
+\begin{tabularx}{\textwidth}{@{}ll>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X@{}}
+\toprule
+\rowcolor{headergray}
+Direction & Comparator & $\Delta$Pearson & $\Delta$Spearman & $\Delta$CCC \\
+\midrule
+\rowcolor{msgthair}
+K$\rightarrow$U ($b=5$) & D-STGCNT & \textbf{0.18545 [0.13966, 0.23301]} & \textbf{0.27635 [0.22730, 0.32494]} & \textbf{0.26799 [0.21468, 0.32109]} \\
+K$\rightarrow$U ($b=5$) & EGCN & $-0.02383$ [$-0.04889$, 0.00302] & $-0.00003$ [$-0.02928$, 0.02732] & 0.00859 [$-0.01820$, 0.03499] \\
+\addlinespace[2pt]
+\rowcolor{msgthair}
+U$\rightarrow$K ($b=35$) & D-STGCNT & \textbf{0.29258 [0.25085, 0.33514]} & \textbf{0.27498 [0.23031, 0.32100]} & \textbf{0.36091 [0.31866, 0.40592]} \\
+U$\rightarrow$K ($b=35$) & EGCN & \textbf{0.05897 [0.03857, 0.08111]} & \textbf{0.04873 [0.02631, 0.07276]} & \textbf{0.07067 [0.04694, 0.09501]} \\
+\bottomrule
+\end{tabularx}
+\vspace{4pt}
+\parbox{0.96\textwidth}{\footnotesize \textit{Note.} For errors, $\Delta$ is comparator minus MSGT; for correlations and CCC, it is MSGT minus comparator. Positive values favor MSGT, and bold intervals exclude zero. Brackets show 95\% paired repeat-cluster bootstrap intervals over 20 outer-repeat means after averaging three seeds.}
+\end{table}

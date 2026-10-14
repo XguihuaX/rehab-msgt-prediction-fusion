@@ -1,0 +1,20 @@
+\begin{table}[tb]
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.28}
+\caption{MSGT component variants used for architecture sensitivity.}
+\label{tab:variants}
+\begin{tabularx}{\textwidth}{@{}p{0.18\textwidth}XX@{}}
+\toprule
+\rowcolor{headergray}
+Variant & Design change relative to MSGT & Question addressed \\
+\midrule
+\rowcolor{msgthair}
+Full MSGT & Multi-scale graph-temporal encoder, temporal Transformer, coordinate plus bone-unit input & Reference proposed model. \\
+Single-scale & Replaces multi-branch temporal aggregation with one temporal scale & Does multi-scale temporal encoding help under the matched transfer condition? \\
+No Transformer & Removes post-graph temporal self-attention & Does long-range temporal aggregation help after graph-temporal encoding? \\
+Coordinates-only & Removes bone-unit-vector channels & Does explicit limb direction help beyond normalized coordinates? \\
+Stripped & Removes all three tested additions & Does the combined design differ from the reduced graph-temporal model? \\
+\bottomrule
+\end{tabularx}
+\end{table}

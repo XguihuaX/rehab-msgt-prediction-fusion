@@ -1,0 +1,18 @@
+\begin{table}[ht]
+\centering
+\caption{Accuracy and computational complexity of MSGT and CTR-GCN.}
+\label{tab:accuracy-complexity}
+\scriptsize
+\setlength{\tabcolsep}{3.1pt}
+\begin{tabular}{lrrccrrr}
+\toprule
+Model & Params (M) & MACs (G) & \shortstack{Latency (ms)\\b1 / b8} & \shortstack{Peak (MB)\\b1 / b8} & RMSE & MAE & CCC \\
+\midrule
+MSGT & 0.488 & 0.412 & 1.161 / 1.182 & 15.9 / 45.4 & 0.2132 & 0.1621 & 0.5649 \\
+CTR-GCN & 3.169 & 3.141 & 9.386 / 9.066 & 30.4 / 69.9 & 0.2154 & 0.1630 & 0.5436 \\
+\bottomrule
+\end{tabular}
+\vspace{3pt}
+
+\parbox{0.98\textwidth}{\footnotesize \textit{Note.} Accuracy is shown at the UI-PRMD$\rightarrow$KIMORE full-fine-tuning endpoint ($b=35$). Complexity uses the frozen models and a common $(1,150,18,6)$ input; latency and peak memory are FP32 batch 1 / batch 8 measurements on one RTX 5090.}
+\end{table}
